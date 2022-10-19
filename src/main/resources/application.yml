@@ -17,10 +17,10 @@ spring:
             - Path=/res/v1/*/*
             - Method=GET,POST,PUT,DELETE
           filters:
-            - name: CircuitBreaker
-              args:
-                name: order
-                fallbackUri: forward:/fallback/restaurantFallback
+          - name: CircuitBreaker
+            args:
+              name: order
+              fallbackUri: forward:/fallback/restaurantFallback
 eureka:
   client:
     serviceUrl:
