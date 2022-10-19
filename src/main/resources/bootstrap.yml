@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: res-service-apiGateway
+server:
+  port: 9003
